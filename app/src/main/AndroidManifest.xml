@@ -13,14 +13,25 @@
         android:roundIcon="@mipmap/knowweather_round_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.KnowWeather">
-        <activity android:name=".Internet" android:taskAffinity="com.Internet" android:excludeFromRecents="true"/>
-        <activity android:name=".DisplayResult"/>
-        <activity android:name=".MainActivity" android:launchMode="singleTask">
+
+        <activity android:name=".SplashScreen"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".Internet"
+            android:excludeFromRecents="true"
+            android:taskAffinity="com.Internet" />
+
+        <activity android:name=".DisplayResult" />
+
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask" />
     </application>
 
 </manifest>
