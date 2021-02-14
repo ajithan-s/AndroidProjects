@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/know_weather_logo"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/postalCodeInputArea"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableStart="@drawable/custom_locationpin_icon"
+        android:drawablePadding="2dp"
+        android:hint="@string/postal_code_info"
+        android:inputType="number"
+        android:paddingStart="9dp"
+        android:paddingEnd="11dp"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/getInfoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_toEndOf="@id/postalCodeInputArea"
+        android:background="@drawable/custom_button"
+        android:hint="@string/search_button" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/postalCodeDetails"
+        android:layout_below="@id/postalCodeInputArea"
+        android:layout_margin="30dp"
+        tools:listitem="@layout/row_data"/>
+
+</RelativeLayout>

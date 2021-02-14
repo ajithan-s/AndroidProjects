@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Know Weather</string>
+    <string name="postal_code_info">Enter your location postal code</string>
+    <string name="search_button">Search</string>
+    <string name="oops_message">Oops!!! No internet connection available</string>
+    <string name="refresh_connection">Refresh the Internet Connection</string>
+    <string name="loading">Please wait...</string>
+    <string name="view_another_result">View Another Result</string>
+    <string name="developed_by">Developed by Ajithan</string>
+</resources>
